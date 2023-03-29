@@ -13,6 +13,8 @@ a{
 
 ul{
     list-style: none;
+    padding: 15px;
+    text-align: center;
 }
 
 body{
@@ -31,6 +33,30 @@ body{
     flex-direction: column;
     padding: 40px;
     border-bottom: 1px solid rgb(0,0,0,0.05);
+}
+
+header{
+    background: #5bb381;
+    color: #ececec;
+    height: 110px;
+    text-align: center;
+    position: sticky;
+    padding-top: 20px;
+}
+nav{
+    background: #93c1a7;
+    height: 50px;
+    margin: 0;
+}
+li{
+    display: inline;
+}
+li a{
+    padding: 20px 40px;
+    color: #fff;
+}
+li a:hover{
+    color: #e3b34c;
 }
 
 
