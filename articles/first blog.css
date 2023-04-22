@@ -12,8 +12,9 @@ p{
 }
 
 article{
-    text-align: center;
+    text-align: justify;
     font-weight: 30px;
     font-size: 30px;
+    align-content: center;
 }
 
