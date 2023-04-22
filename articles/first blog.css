@@ -12,6 +12,9 @@ p{
 }
 
 article{
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
     text-align: center;
     font-weight: 30px;
     font-size: 30px;
