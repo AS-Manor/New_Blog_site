@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forth blog</title>
+    <link rel="stylesheet" href="forth blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+/>
+</head>
+<body>
+    <h1>Control Flow and Functions</h1>
+    <p class="details">
+        Author: Abdul Samed Manor <br>
+        Date: 10th February 2023 <br>
+    </p>
+    <hr>
+    <article>
+        <p><b>Function</b> is a block of code designed to perform a particular task. It can only be executed when it is called (invoked).
+            example;
+        </p>
+        <pre class="line-numbers">
+            <code class="language-javascript">
+// Function that calculate the percentage of a given number
+function percentageCalculator() {
+var num = (30/100) * 135
+    console.log(num);
+}
+</code>
+
+        </pre>
+        <br>
+        <p><b>Function Syntax</b></p>
+        <p>
+            <pre class="line-numbers">
+            <code class="language-javascript">
+                function name() {
+                    // code to be executed
+                }
+            </code>
+        </pre>
+        </p>
+        <br>
+        <p>
+            <b>JavaScript</b> function is defined with the <code class="language-javascript">function</code> keyword, followed by the <code class="language-javascript">( )</code>. The code to be executed by the function is placed in <code class="language-javascript">{ }</code>.
+        </p>
+        <br>
+        <p>
+            <b>TASK 1</b> Write a function that outputs a sentence. Then invoke that function later in your code.
+        </p>
+        <p>
+            <pre class="line-numbers">
+                <code class="language-javascript">
+        function callKitten(kittenName) {
+            console.log("Come here", kittenName)
+        }
+        callKitten('Fluffy');
+                </code>
+            </pre>
+        </p>
+        <br>
+        <p>
+            <b>TASK 2</b> Write a simple program to combine a first name and a last name inside a function. Then update the function to accept a first and last name as arguments.
+        </p>
+        <p>
+            <pre class="line-numbers">
+            <code class="language-javascript">
+        function nameCombination(firstName, lastName) {
+            // console.log(`my first name is ${firstName}`);
+            //console.log('My first name is '+ firstName)
+            //console.log(`my last name is ${lastName}`);
+                
+            return `${firstName}  ${lastName}`
+        }
+                
+            const namee = nameCombination('Abdul', 'Manor');
+            console.log(namee);
+            </code>
+            </pre>
+        </p>
+        <br>
+        <p><b>TASK 4</b></p>
+        <p><ul>
+            <li> Make a variable called "temperature". Write some code that tells you to put on a coat if it is below 50 degrees</li>
+            <li> Extend the Program to show the following:
+                <ol>
+                    <li>If it's less than 50 degrees, wear a coat.</li>
+                    <li>If it's less than 30 degrees, wear a coat and a hat.</li>
+                    <li>If it's less than 0 degrees, stay inside.</li>
+                    <li>Otherwise, just pants and vest is fine.</li>
+                </ol>
+            </li>
+            <li>Add a logical operator to your ‘Shall I wear a coat?’ program</li>
+           </ul>
+        </p>
+        <br>
+        <pre class="line-numbers">
+            <code class="language-javascript">
+                var temperature = 55;
+                var normalTemperature = 50;
+                if (temperature <= 50 && temperature > 30) {
+                  console.log('Put on a coat')
+                } else if(temperature <= 3 0 && temperature > 0){
+                 console.log('Put on a coat and hat')
+                } else if(temperature < 0) {console.log('Stay inside')}
+                else {console.log(`No need for a coat it is ${temperature - normalTemperature} degrees above average`)}
+            </code>
+        </pre>
+    </article>
+    
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+</body>
+</html>
