@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth blog</title>
+    <link rel="stylesheet" href="fifth blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+    />
+</head>
+<body>
+    <h1>Functions and Control Flow Practicals</h1>
+    <p class="details">
+        Author: Abdul Samed Manor <br>
+        Date: 10th February 2023 <br>
+    </p>
+    <hr>
+    <article>
+        <p><b>TASK 1:</b></p>
+        <p>
+            <ul>
+                <li>Create a function that is able to return a specific percentage of any number</li>
+                <li>For example you want to know what 30% of 135 is.</li>
+            </ul>
+            <ol>
+                <li>Create a function named percentageCalculator</li>
+                <li>Add 2 arguments for “number” and “percentage”</li>
+                <li>Do the maths required to work out a percentage with the arguments</li>
+                <li>Return the result of the maths</li>
+                <li>Console.log the returned value</li>
+            </ol>
+            <pre class="line-numbers">
+                <code class="language-javascript">
+                    function percentageCalculator(num, percentage) {
+                        return (num/100) * percentage;
+                    }
+                    
+                    console.log(percentageCalculator(3, 135));
+                </code>
+            </pre>
+        </p>
+        <p><b>TASK 2:</b></p>
+        <br>
+        <pr>Customers can order 3 different types of drink and also select 3 sizes.</pr>
+        <br>
+        <p>Cola, Lemonade and  Orangeade</p>
+        <br>
+        <p>Small, Medium and Large</p>
+        <br>
+        <p>The button they press have the values “cola”,”lemon”,”orange”</p>
+        <br>
+        <p>
+            <code class="language-javascript">Create a function that will output the message “You have ordered a {size} of {softDrinkLabel}”</code>
+        </p>
+        <p>
+            <ol>
+                <li>Create a function named drinkOrder</li>
+                <li>Add 2 arguments for <code class="language-javascript">"size"</code> and <code class="language-javascript">"drink"</code></li>
+                <li>Use a <code class="language-javascript">switch</code> statement to determine where the functional code needs to be written</li>
+                <li>Create a message in each case statement to be returned.</li>
+                <li><code class="language-javascript">Console.log</code> the returned message</li>
+            </ol>
+        </p>
+        <p>
+            <pre class="line-numbers">
+                <code class="language-javascript">
+function drinkOrder(size, drink)
+{
+  let drinkable;
+  
+  switch(drink) {
+    case 'lemon':
+      drinkable= "Lemonade";
+      break;
+    case 'Orange':
+      drinkable= "Orangeade";
+      break;   
+   case 'cola':
+      drinkable= "Cola";
+      break; 
+    default:
+      drinkable = "drink";
+  }
+  return `You have ordered a ${size} ${drinkable}`;
+}
+
+console.log(drinkOrder('medium', 'Orange'))
+                </code>
+            </pre>
+        </p>
+        <p><b>TASK 3</b></p>
+        <br>
+        <p>We need to create a function capable of using the addition, subtraction, multiply, divider or modulus operator on 2 numbers provided.</p>
+        <br>
+        <ol>
+            <li>Create a function named calculator</li>
+            <li>Add 3 arguments for <code class="language-javascript">“number1”, “number2” and “operator”</code></li>
+            <li>Use a <code class="language-javascript">switch</code> statement to determine which operator to use</li>
+            <li>Add the math code for each operator in the case statement to return the value</li>
+            <li><code class="language-javascript">Console.log</code> a message <code class="language-javascript">“{number1} {operator} {number2} = {value}”</code></li>
+        </ol>
+        <br>
+        <pre class="line-numbers">
+            <code class="language-javascript">
+                function calculator(number1, number2, operator){
+                    let output;
+                    
+                      switch(operator) {
+                        case '+':
+                          output = number1 + number2;
+                          break;
+                        case '-':
+                          output = number1  - number2;
+                          break; 
+                       case '/':
+                          output = number1  / number2;
+                          break; 
+                      }
+                      
+                      return output;
+                     
+                    }
+                    
+                    
+                    console.log(calculator(7, 8, '-'));
+            </code>
+        </pre>
+
+    </article>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>    
+</body>
+</html>
