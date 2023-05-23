@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh blog</title>
+    <link rel="stylesheet" href="seventh blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+    />
+</head>
+<body>
+    <h1>Functions and Control Flow Practicals</h1>
+    <p class="details">
+        Author: Abdul Samed Manor <br>
+        Date: 10th February 2023 <br>
+    </p>
+    <hr>
+    <article>
+        <p>In JavaScript, <b>loops</b> allow you to execute a block of code repeatedly. The main types of loops are the for loop, while loop. Here's an overview of each:</p>
+        <br>
+        <ol>
+            <li><code class="language-javascript">For Loop:</code> The for loop is used when you know the number of iterations in advance. It consists of an initialization statement, a condition, and an increment or decrement statement. The loop will continue executing as long as the condition is true. Here's the syntax:</li>
+            <pre class="line-numbers">
+                <code class="language-javascript">
+for (initialization; condition; increment/decrement) {
+        // code to be executed
+}
+example:
+for (var i = 0; i < 5; i++) {
+    console.log(i);
+  }      
+                </code>
+            </pre>
+            <li><code class="language-javascript">While Loop:</code> The while loop is used when the number of iterations is not known in advance and depends on a condition. It continues executing as long as the condition is true. Here's the syntax:</li>
+            <pre class="line-numbers">
+                <code class="language-javascript">
+while (condition) {
+    // code to be executed
+}
+example:
+var i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+                      
+                </code>
+            </pre>
+        </ol>
+        <br>
+        <p><b>TASK:</b> Write a loop that outputs the 7 times table, from 7 x 1 = 7 to 7 x 12 = 84</p>
+        <pre>
+            <code class="language-javascript">
+var num = 7
+for (var i = 1; i <= 12; i++) {
+    console.log(`${num} x ${i} = ` + num * i);
+}
+            </code>
+        </pre>
+    </article>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>  
+</body>
+</html>
