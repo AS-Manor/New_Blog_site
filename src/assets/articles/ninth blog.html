@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninth blog</title>
+    <link rel="stylesheet" href="ninth blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+    />
+</head>
+<body>
+    <h1>Objects</h1>
+    <p class="details">
+        Author: Abdul Samed Manor <br>
+        Date: 10th February 2023 <br>
+    </p>
+    <hr>
+    <article>
+        <p><b>An Object</b> is a complex data type that allows you to store key-value pairs. It provides a way to group related data and functions together. Here's how you can work with objects in JavaScript:</p>
+        <br>
+        <ol>
+            <li><b>Creating an Object:</b></li>
+            <p>You can create an object by using curly braces <code class="language-javascript">{ }</code> and defining key-value pairs inside the object. Keys are strings, and values can be of any data type, including numbers, strings, booleans, arrays, or even other objects. Here are a few examples:</p>
+            <pre>
+                <code class="language-javascript">
+var person = {
+name: 'Abdul',
+age: 21,
+isStudent: true,
+};
+                </code>
+            </pre>
+            <br>
+            <li><b>Accessing Object Properties:</b></li>
+            <p>You can access the properties of an object using dot notation<code class="language-javascript">(`objectName.propertyName`)</code> or square bracket notation <code class="language-javascript">(`objectName['propertyName']`)</code>. Here are some examples;</p>
+            <pre>
+                <code class="language-javascript">
+console.log(person.name); // Output: 'Abdul'
+console.log(car['age']); // Output: '21'
+                    
+                </code>
+            </pre>
+            <br>
+            <li><b>Modifying Object Properties:</b></li>
+            <p>You can modify the value of an object's property by assigning a new value to it. Here's an example:</p>
+            <pre>
+                <code class="language-javascript">
+person.age = 100;
+person.isStudent = false;
+                </code>
+            </pre>
+            <br>
+            <li><b>Adding New Properties:</b></li>
+            <p>You can add new properties to an object by assigning a value to a new key. Here's some examples;</p>
+            <pre>
+                <code class="language-javascript">
+person.gender = 'Male';
+person.status = 'Single';
+                </code>
+            </pre>
+        </ol>   
+        <br>
+        <p><b>TASK:</b></p>
+        <ul>
+            <li>Create an object to hold information on your favourite recipe. Then display the properties on screen.</li>
+            <li>Bonus Points: Create a loop to list all the ingredients and directions.</li>
+            <li>Add a function called letsCook</li>
+            <li>Have it say: "I'm hungry! Let's cook..." with the name of your recipe title.</li>
+            <li>Call your new method.</li>
+        </ul>
+        <pre>
+            <code class="language-javascript">
+var favRecipe = {
+    title: "Jollof rice",
+    servings: 5,
+    ingredients: ["Basmati rice", "Red pepper", "Onion", "Garlic", "Ginger", "seasonings", "Tomato sauce", "Chicken stock", "Sunflower oil"],
+    directions: ["leave the sunflower oil to heat up", "add onion and garlic", "add tomato sauce", "stir for couple of minutes", "add seasonings and ginger", "add chicken stock and basmati rice", "stir until evenly mixed and cover"]
+}
+                
+console.log(favRecipe.title)
+console.log(favRecipe.servings)
+console.log(favRecipe.ingredients)
+console.log(favRecipe.directions)
+                
+                
+                
+for(const ingredients of favRecipe.ingredients){
+    console.log(ingredients)
+}
+                
+for(var directions of favRecipe.directions){
+    console.log(directions)
+}
+                
+function letsCook(food) {
+    console.log(`I'm hungry, lets cook ${food.title}`)
+}
+                
+letsCook(favRecipe);
+            </code>
+        </pre>
+
+    </article>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+</body>
+</html>
