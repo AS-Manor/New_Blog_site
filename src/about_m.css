@@ -40,7 +40,7 @@ body{
     margin-bottom: 25px;
 }
 .about-text p{
-    color: #fcfc;
+    color: rgba(247, 240, 247, 0.8);
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
